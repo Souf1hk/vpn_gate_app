@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Theme Options -->
+    <string-array name="theme_entries">
+        <item>@string/theme_system</item>
+        <item>@string/theme_light</item>
+        <item>@string/theme_dark</item>
+    </string-array>
+    
+    <string-array name="theme_values">
+        <item>system</item>
+        <item>light</item>
+        <item>dark</item>
+    </string-array>
+    
+    <!-- Protocol Options -->
+    <string-array name="protocol_entries">
+        <item>@string/protocol_openvpn</item>
+        <item>@string/protocol_ikev2</item>
+        <item>@string/protocol_wireguard</item>
+    </string-array>
+    
+    <string-array name="protocol_values">
+        <item>openvpn</item>
+        <item>ikev2</item>
+        <item>wireguard</item>
+    </string-array>
+    
+    <!-- Language Options -->
+    <string-array name="language_entries">
+        <item>System Default</item>
+        <item>English</item>
+        <item>Spanish</item>
+        <item>French</item>
+        <item>German</item>
+        <item>Japanese</item>
+        <item>Chinese</item>
+    </string-array>
+    
+    <string-array name="language_values">
+        <item>system</item>
+        <item>en</item>
+        <item>es</item>
+        <item>fr</item>
+        <item>de</item>
+        <item>ja</item>
+        <item>zh</item>
+    </string-array>
+    
+    <!-- Sort Options -->
+    <string-array name="sort_entries">
+        <item>@string/sort_ping</item>
+        <item>@string/sort_speed</item>
+        <item>@string/sort_score</item>
+        <item>@string/sort_country</item>
+        <item>@string/sort_sessions</item>
+        <item>@string/sort_uptime</item>
+    </string-array>
+    
+    <string-array name="sort_values">
+        <item>ping</item>
+        <item>speed</item>
+        <item>score</item>
+        <item>country</item>
+        <item>sessions</item>
+        <item>uptime</item>
+    </string-array>
+</resources>
