@@ -1,0 +1,202 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <!-- General Settings -->
+    <PreferenceCategory
+        android:title="@string/settings_general"
+        app:iconSpaceReserved="false">
+
+        <SwitchPreferenceCompat
+            android:key="auto_connect"
+            android:title="@string/auto_connect_title"
+            android:summary="@string/auto_connect_summary"
+            android:defaultValue="false"
+            app:iconSpaceReserved="false" />
+
+        <SwitchPreferenceCompat
+            android:key="start_on_boot"
+            android:title="@string/start_on_boot_title"
+            android:summary="@string/start_on_boot_summary"
+            android:defaultValue="false"
+            app:iconSpaceReserved="false" />
+
+        <SwitchPreferenceCompat
+            android:key="show_notification"
+            android:title="@string/show_notification_title"
+            android:summary="@string/show_notification_summary"
+            android:defaultValue="true"
+            app:iconSpaceReserved="false" />
+
+        <ListPreference
+            android:key="theme_mode"
+            android:title="@string/theme_title"
+            android:summary="@string/theme_summary"
+            android:entries="@array/theme_entries"
+            android:entryValues="@array/theme_values"
+            android:defaultValue="system"
+            app:iconSpaceReserved="false" />
+
+    </PreferenceCategory>
+
+    <!-- Connection Settings -->
+    <PreferenceCategory
+        android:title="@string/settings_connection"
+        app:iconSpaceReserved="false">
+
+        <SwitchPreferenceCompat
+            android:key="auto_reconnect"
+            android:title="@string/auto_reconnect_title"
+            android:summary="@string/auto_reconnect_summary"
+            android:defaultValue="true"
+            app:iconSpaceReserved="false" />
+
+        <SeekBarPreference
+            android:key="reconnect_interval"
+            android:title="@string/reconnect_interval_title"
+            android:summary="@string/reconnect_interval_summary"
+            android:max="300"
+            android:min="10"
+            android:defaultValue="30"
+            app:iconSpaceReserved="false" />
+
+        <SeekBarPreference
+            android:key="connection_timeout"
+            android:title="@string/connection_timeout_title"
+            android:summary="@string/connection_timeout_summary"
+            android:max="120"
+            android:min="10"
+            android:defaultValue="30"
+            app:iconSpaceReserved="false" />
+
+        <EditTextPreference
+            android:key="preferred_country"
+            android:title="@string/preferred_country_title"
+            android:summary="@string/preferred_country_summary"
+            android:defaultValue=""
+            app:iconSpaceReserved="false" />
+
+        <SeekBarPreference
+            android:key="max_ping"
+            android:title="@string/max_ping_title"
+            android:summary="@string/max_ping_summary"
+            android:max="1000"
+            android:min="50"
+            android:defaultValue="300"
+            app:iconSpaceReserved="false" />
+
+    </PreferenceCategory>
+
+    <!-- Security Settings -->
+    <PreferenceCategory
+        android:title="@string/settings_security"
+        app:iconSpaceReserved="false">
+
+        <SwitchPreferenceCompat
+            android:key="kill_switch"
+            android:title="@string/kill_switch_title"
+            android:summary="@string/kill_switch_summary"
+            android:defaultValue="true"
+            app:iconSpaceReserved="false" />
+
+        <SwitchPreferenceCompat
+            android:key="dns_protection"
+            android:title="@string/dns_protection_title"
+            android:summary="@string/dns_protection_summary"
+            android:defaultValue="true"
+            app:iconSpaceReserved="false" />
+
+        <EditTextPreference
+            android:key="custom_dns_1"
+            android:title="Primary DNS"
+            android:summary="Custom primary DNS server"
+            android:defaultValue="8.8.8.8"
+            android:dependency="dns_protection"
+            app:iconSpaceReserved="false" />
+
+        <EditTextPreference
+            android:key="custom_dns_2"
+            android:title="Secondary DNS"
+            android:summary="Custom secondary DNS server"
+            android:defaultValue="8.8.4.4"
+            android:dependency="dns_protection"
+            app:iconSpaceReserved="false" />
+
+        <SwitchPreferenceCompat
+            android:key="bypass_lan"
+            android:title="@string/bypass_lan_title"
+            android:summary="@string/bypass_lan_summary"
+            android:defaultValue="true"
+            app:iconSpaceReserved="false" />
+
+        <SwitchPreferenceCompat
+            android:key="block_ads"
+            android:title="@string/block_ads_title"
+            android:summary="@string/block_ads_summary"
+            android:defaultValue="false"
+            app:iconSpaceReserved="false" />
+
+        <SwitchPreferenceCompat
+            android:key="block_malware"
+            android:title="@string/block_malware_title"
+            android:summary="@string/block_malware_summary"
+            android:defaultValue="false"
+            app:iconSpaceReserved="false" />
+
+    </PreferenceCategory>
+
+    <!-- Advanced Settings -->
+    <PreferenceCategory
+        android:title="@string/settings_advanced"
+        app:iconSpaceReserved="false">
+
+        <ListPreference
+            android:key="protocol"
+            android:title="@string/protocol_title"
+            android:summary="@string/protocol_summary"
+            android:entries="@array/protocol_entries"
+            android:entryValues="@array/protocol_values"
+            android:defaultValue="openvpn"
+            app:iconSpaceReserved="false" />
+
+        <SwitchPreferenceCompat
+            android:key="analytics_enabled"
+            android:title="@string/analytics_title"
+            android:summary="@string/analytics_summary"
+            android:defaultValue="true"
+            app:iconSpaceReserved="false" />
+
+        <Preference
+            android:key="reset_settings"
+            android:title="@string/reset_settings_title"
+            android:summary="@string/reset_settings_summary"
+            app:iconSpaceReserved="false" />
+
+        <Preference
+            android:key="clear_cache"
+            android:title="@string/clear_cache_title"
+            android:summary="@string/clear_cache_summary"
+            app:iconSpaceReserved="false" />
+
+    </PreferenceCategory>
+
+    <!-- About -->
+    <PreferenceCategory
+        android:title="@string/settings_about"
+        app:iconSpaceReserved="false">
+
+        <Preference
+            android:key="about"
+            android:title="@string/about_description"
+            android:summary="@string/about_version"
+            app:iconSpaceReserved="false" />
+
+        <Preference
+            android:key="vpn_gate_info"
+            android:title="@string/about_vpn_gate"
+            android:summary="@string/about_vpn_gate_description"
+            app:iconSpaceReserved="false" />
+
+    </PreferenceCategory>
+
+</PreferenceScreen>

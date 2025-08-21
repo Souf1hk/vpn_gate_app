@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Primary Colors -->
+    <color name="primary">#1976D2</color>
+    <color name="primary_variant">#1565C0</color>
+    <color name="primary_light">#BBDEFB</color>
+    
+    <!-- Secondary Colors -->
+    <color name="secondary">#03DAC6</color>
+    <color name="secondary_variant">#018786</color>
+    <color name="secondary_light">#B2DFDB</color>
+    
+    <!-- Background Colors -->
+    <color name="background">#FFFFFF</color>
+    <color name="background_dark">#121212</color>
+    <color name="surface">#FFFFFF</color>
+    <color name="surface_dark">#1E1E1E</color>
+    
+    <!-- Text Colors -->
+    <color name="on_primary">#FFFFFF</color>
+    <color name="on_secondary">#000000</color>
+    <color name="on_background">#000000</color>
+    <color name="on_background_dark">#FFFFFF</color>
+    <color name="on_surface">#000000</color>
+    <color name="on_surface_dark">#FFFFFF</color>
+    
+    <!-- Status Colors -->
+    <color name="success">#4CAF50</color>
+    <color name="error">#F44336</color>
+    <color name="warning">#FF9800</color>
+    <color name="info">#2196F3</color>
+    
+    <!-- Connection Status Colors -->
+    <color name="connected">#4CAF50</color>
+    <color name="connecting">#FF9800</color>
+    <color name="disconnected">#9E9E9E</color>
+    <color name="error_red">#F44336</color>
+    
+    <!-- Card and Divider Colors -->
+    <color name="card_background">#FFFFFF</color>
+    <color name="card_background_dark">#2C2C2C</color>
+    <color name="divider">#E0E0E0</color>
+    <color name="divider_dark">#424242</color>
+    
+    <!-- Text Colors with Alpha -->
+    <color name="text_primary">#DE000000</color>
+    <color name="text_primary_dark">#DEFFFFFF</color>
+    <color name="text_secondary">#99000000</color>
+    <color name="text_secondary_dark">#99FFFFFF</color>
+    <color name="text_hint">#61000000</color>
+    <color name="text_hint_dark">#61FFFFFF</color>
+    
+    <!-- Button Colors -->
+    <color name="button_connect">#4CAF50</color>
+    <color name="button_disconnect">#F44336</color>
+    <color name="button_disabled">#BDBDBD</color>
+    
+    <!-- Ping Colors -->
+    <color name="ping_excellent">#4CAF50</color>
+    <color name="ping_good">#8BC34A</color>
+    <color name="ping_fair">#FF9800</color>
+    <color name="ping_poor">#F44336</color>
+    
+    <!-- Speed Colors -->
+    <color name="speed_high">#4CAF50</color>
+    <color name="speed_medium">#FF9800</color>
+    <color name="speed_low">#F44336</color>
+    
+    <!-- Chart Colors -->
+    <color name="chart_download">#2196F3</color>
+    <color name="chart_upload">#FF9800</color>
+    <color name="chart_grid">#E0E0E0</color>
+    
+    <!-- Ripple Effect -->
+    <color name="ripple">#1F000000</color>
+    <color name="ripple_dark">#1FFFFFFF</color>
+    
+    <!-- Transparent Colors -->
+    <color name="transparent">#00000000</color>
+    <color name="semi_transparent">#80000000</color>
+    
+    <!-- Material Colors -->
+    <color name="material_blue_grey_800">#37474F</color>
+    <color name="material_blue_grey_900">#263238</color>
+    <color name="material_deep_teal_500">#009688</color>
+    <color name="material_deep_teal_200">#80CBC4</color>
+</resources>
